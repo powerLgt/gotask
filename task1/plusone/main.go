@@ -8,9 +8,7 @@ import "fmt"
 	将大整数加 1，并返回结果的数字数组。
 */
 func plusOne(digits []int) []int {
-
-	i := len(digits) - 1
-	for ; i >= 0; i-- {
+	for i := len(digits) - 1; i >= 0; i-- {
 		digits[i] += 1
 		if digits[i] <= 9 {
 			return digits
@@ -18,9 +16,9 @@ func plusOne(digits []int) []int {
 		digits[i] = 0
 	}
 
-	slice := make([]int, 1, len(digits)+1)
-	slice[0] = 1
-	return append(slice, digits...)
+	digits = make([]int, len(digits)+1)
+	digits[0] = 1
+	return digits
 }
 
 func main() {
