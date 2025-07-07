@@ -1,0 +1,932 @@
+{
+	"info": {
+		"_postman_id": "d55e208b-f862-4f0a-8eb4-94b36bdbc468",
+		"name": "测试",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30501941"
+	},
+	"item": [
+		{
+			"name": "用户",
+			"item": [
+				{
+					"name": "注册",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"xiaoming\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"xiaoming@qq.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "注册成功",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"xiaoming\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"xiaoming@qq.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/api/auth/register",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Jul 2025 17:17:41 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "181"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"注册成功\",\n    \"data\": {\n        \"id\": 1,\n        \"username\": \"xiaoming\",\n        \"email\": \"xiaoming@qq.com\",\n        \"createdAt\": \"2025-07-08T01:17:41.93+08:00\",\n        \"updatedAt\": \"2025-07-08T01:17:41.93+08:00\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "登录",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"xiaoming\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "注册成功",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"xiaoming\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"xiaoming@qq.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/api/auth/register",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Jul 2025 17:17:41 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "181"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"注册成功\",\n    \"data\": {\n        \"id\": 1,\n        \"username\": \"xiaoming\",\n        \"email\": \"xiaoming@qq.com\",\n        \"createdAt\": \"2025-07-08T01:17:41.93+08:00\",\n        \"updatedAt\": \"2025-07-08T01:17:41.93+08:00\"\n    }\n}"
+						},
+						{
+							"name": "登录成功",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"xiaoming\",\r\n    \"password\": \"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/api/auth/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Jul 2025 17:18:41 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "410"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"登录成功\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InhpYW9taW5nIiwiaXNzIjoiYmxvZy1hcGkiLCJleHAiOjE3NTI1MTM1MjEsIm5iZiI6MTc1MTkwODcyMSwiaWF0IjoxNzUxOTA4NzIxfQ.-7Tm13wPoPzhQkoEWmKxRA6Ur-u593uHVJrGN_5YLuM\",\n        \"user\": {\n            \"id\": 1,\n            \"username\": \"xiaoming\",\n            \"email\": \"xiaoming@qq.com\",\n            \"createdAt\": \"2025-07-07T17:17:41.93Z\",\n            \"updatedAt\": \"2025-07-07T17:17:41.93Z\"\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "文章",
+			"item": [
+				{
+					"name": "创建文章",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InhpYW9taW5nIiwiaXNzIjoiYmxvZy1hcGkiLCJleHAiOjE3NTI1MTM1MjEsIm5iZiI6MTc1MTkwODcyMSwiaWF0IjoxNzUxOTA4NzIxfQ.-7Tm13wPoPzhQkoEWmKxRA6Ur-u593uHVJrGN_5YLuM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"慢慢学2\",\r\n    \"title\": \"golang教程2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/posts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "文章创建成功",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InhpYW9taW5nIiwiaXNzIjoiYmxvZy1hcGkiLCJleHAiOjE3NTI1MTM1MjEsIm5iZiI6MTc1MTkwODcyMSwiaWF0IjoxNzUxOTA4NzIxfQ.-7Tm13wPoPzhQkoEWmKxRA6Ur-u593uHVJrGN_5YLuM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content\": \"慢慢学2\",\r\n    \"title\": \"golang教程2\"\r\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/api/posts",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"posts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Jul 2025 17:24:51 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "189"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"文章创建成功\",\n    \"data\": {\n        \"id\": 3,\n        \"title\": \"golang教程2\",\n        \"content\": \"慢慢学2\",\n        \"userId\": 1,\n        \"createdAt\": \"2025-07-07T17:24:51.262Z\",\n        \"updatedAt\": \"2025-07-07T17:24:51.262Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "获取文章列表",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/posts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "获取文章列表成功",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8080/api/posts",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"posts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Jul 2025 17:25:48 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "528"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"获取文章列表成功\",\n    \"data\": {\n        \"page\": 1,\n        \"pageSize\": 10,\n        \"posts\": [\n            {\n                \"id\": 3,\n                \"title\": \"golang教程2\",\n                \"content\": \"慢慢学2\",\n                \"userId\": 1,\n                \"createdAt\": \"2025-07-07T17:24:51.262Z\",\n                \"updatedAt\": \"2025-07-07T17:24:51.262Z\"\n            },\n            {\n                \"id\": 2,\n                \"title\": \"golang教程2\",\n                \"content\": \"慢慢学2\",\n                \"userId\": 1,\n                \"createdAt\": \"2025-07-07T17:24:05.246Z\",\n                \"updatedAt\": \"2025-07-07T17:24:05.246Z\"\n            },\n            {\n                \"id\": 1,\n                \"title\": \"golang教程\",\n                \"content\": \"慢慢学\",\n                \"userId\": 1,\n                \"createdAt\": \"2025-07-07T17:22:42.149Z\",\n                \"updatedAt\": \"2025-07-07T17:22:42.149Z\"\n            }\n        ],\n        \"total\": 3\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "获取文章",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/posts/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "获取文章成功",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8080/api/posts/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"posts",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Jul 2025 17:26:32 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "187"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"获取文章成功\",\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"golang教程\",\n        \"content\": \"慢慢学\",\n        \"userId\": 1,\n        \"createdAt\": \"2025-07-07T17:22:42.149Z\",\n        \"updatedAt\": \"2025-07-07T17:22:42.149Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "删除文章",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InhpYW9taW5nIiwiaXNzIjoiYmxvZy1hcGkiLCJleHAiOjE3NTI1MTM1MjEsIm5iZiI6MTc1MTkwODcyMSwiaWF0IjoxNzUxOTA4NzIxfQ.-7Tm13wPoPzhQkoEWmKxRA6Ur-u593uHVJrGN_5YLuM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/posts/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"posts",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "获取文章成功",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8080/api/posts/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"posts",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Jul 2025 17:26:32 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "187"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"获取文章成功\",\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"golang教程\",\n        \"content\": \"慢慢学\",\n        \"userId\": 1,\n        \"createdAt\": \"2025-07-07T17:22:42.149Z\",\n        \"updatedAt\": \"2025-07-07T17:22:42.149Z\"\n    }\n}"
+						},
+						{
+							"name": "文章删除成功",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InhpYW9taW5nIiwiaXNzIjoiYmxvZy1hcGkiLCJleHAiOjE3NTI1MTM1MjEsIm5iZiI6MTc1MTkwODcyMSwiaWF0IjoxNzUxOTA4NzIxfQ.-7Tm13wPoPzhQkoEWmKxRA6Ur-u593uHVJrGN_5YLuM",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8080/api/posts/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"posts",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Jul 2025 17:27:26 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "49"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"文章删除成功\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "修改文章",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InhpYW9taW5nIiwiaXNzIjoiYmxvZy1hcGkiLCJleHAiOjE3NTI1MTM1MjEsIm5iZiI6MTc1MTkwODcyMSwiaWF0IjoxNzUxOTA4NzIxfQ.-7Tm13wPoPzhQkoEWmKxRA6Ur-u593uHVJrGN_5YLuM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"慢慢学3\",\r\n    \"title\": \"golang教程3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/posts/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"posts",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "文章不存在",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InhpYW9taW5nIiwiaXNzIjoiYmxvZy1hcGkiLCJleHAiOjE3NTI1MTM1MjEsIm5iZiI6MTc1MTkwODcyMSwiaWF0IjoxNzUxOTA4NzIxfQ.-7Tm13wPoPzhQkoEWmKxRA6Ur-u593uHVJrGN_5YLuM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content\": \"慢慢学3\",\r\n    \"title\": \"golang教程3\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/api/posts/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"posts",
+										"2"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Jul 2025 17:28:29 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": -1,\n    \"msg\": \"文章不存在或无权限修改\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "修改文章成功",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InhpYW9taW5nIiwiaXNzIjoiYmxvZy1hcGkiLCJleHAiOjE3NTI1MTM1MjEsIm5iZiI6MTc1MTkwODcyMSwiaWF0IjoxNzUxOTA4NzIxfQ.-7Tm13wPoPzhQkoEWmKxRA6Ur-u593uHVJrGN_5YLuM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"content\": \"慢慢学3\",\r\n    \"title\": \"golang教程3\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/api/posts/3",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"posts",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Jul 2025 17:29:00 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "189"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"文章更新成功\",\n    \"data\": {\n        \"id\": 3,\n        \"title\": \"golang教程3\",\n        \"content\": \"慢慢学3\",\n        \"userId\": 1,\n        \"createdAt\": \"2025-07-07T17:24:51.262Z\",\n        \"updatedAt\": \"2025-07-07T17:29:00.229Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "评论",
+			"item": [
+				{
+					"name": "获取文章评论",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/comments/post/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comments",
+								"post",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "获取评论列表成功",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8080/api/comments/post/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"comments",
+										"post",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Jul 2025 17:32:17 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "232"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"获取评论列表成功\",\n    \"data\": {\n        \"comments\": [\n            {\n                \"id\": 1,\n                \"content\": \"写的真好\",\n                \"userId\": 1,\n                \"postId\": 1,\n                \"createdAt\": \"2025-07-07T17:31:54.038Z\",\n                \"updatedAt\": \"2025-07-07T17:31:54.038Z\"\n            }\n        ],\n        \"page\": 1,\n        \"pageSize\": 10,\n        \"total\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "发表评论",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InhpYW9taW5nIiwiaXNzIjoiYmxvZy1hcGkiLCJleHAiOjE3NTI1MTM1MjEsIm5iZiI6MTc1MTkwODcyMSwiaWF0IjoxNzUxOTA4NzIxfQ.-7Tm13wPoPzhQkoEWmKxRA6Ur-u593uHVJrGN_5YLuM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"postId\": 1,\r\n    \"content\": \"写的真好\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/comments",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"comments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "发表评论",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InhpYW9taW5nIiwiaXNzIjoiYmxvZy1hcGkiLCJleHAiOjE3NTI1MTM1MjEsIm5iZiI6MTc1MTkwODcyMSwiaWF0IjoxNzUxOTA4NzIxfQ.-7Tm13wPoPzhQkoEWmKxRA6Ur-u593uHVJrGN_5YLuM",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"postId\": 1,\r\n    \"content\": \"写的真好\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8080/api/comments",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"comments"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Jul 2025 17:31:54 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "178"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"msg\": \"评论创建成功\",\n    \"data\": {\n        \"id\": 1,\n        \"content\": \"写的真好\",\n        \"userId\": 1,\n        \"postId\": 1,\n        \"createdAt\": \"2025-07-07T17:31:54.038Z\",\n        \"updatedAt\": \"2025-07-07T17:31:54.038Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "welcome",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/welcome",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"welcome"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
